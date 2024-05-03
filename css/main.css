@@ -1,0 +1,400 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: cursive;
+  background-color: aliceblue;
+}
+
+.container {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.site-header{
+  padding: 20px 0;
+}
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.header__list{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.header__item-link{
+  color: black;
+  font-weight: bold;
+  font-size: 17px;
+  transition: color 0.3s linear;
+}
+.header__item-link:hover{
+  color: darkblue;
+}
+
+.header__register-btn{
+  width: 100px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  color: white;
+  background-color: teal;
+  font-size: 17px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.header__register-btn:hover{
+  background-color: darkblue;
+}
+
+
+.hero-section{
+  padding: 20px 0;
+  background-color: #F8F8F8;
+}
+.hero{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.hero__content{
+  position: relative;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+.hero__content::before{
+  content: " ";
+  width: 41px;
+  height: 41px;
+  bottom: 245px;
+  right: 170px;
+  position: absolute;
+  background-image: url("../images/hero-rocket.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+.hero__span{
+  width: 77px;
+  height: 18px;
+  color: #00B3A0;
+  font-size: 17px;
+  text-align: start;
+  margin-bottom: 16px;
+}
+.hero__title{
+  width: 565px;
+  font-size: 52px;
+  font-weight: bolder;
+  line-height: 72px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #002248;
+  margin-bottom: 32px;
+}
+.hero__text{
+  width: 513px;
+  font-family: Airbnb Cereal App;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 50px;
+}
+.hero__link{
+  padding: 20px 46px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 700;
+  color: white;
+  background-color: teal;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+.hero__link:hover{
+  background-color: darkblue;
+}
+
+
+
+
+.Location{
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  margin-bottom: 120px; 
+}
+.Location__list{
+  display: flex;
+  padding: 44px 45px 44px 72px;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  
+}
+.Location__item{
+  display: flex;
+  flex-direction: column;
+  margin-left: 120px;
+}
+.Location__item:first-child{
+  margin-left: 0;
+}
+.Location__link{
+  width: 161px;
+  display: flex;
+  flex-direction: column;
+  color: black;
+  gap: 8px; 
+}
+.Location__text{
+  opacity: 0.6;
+}
+.Location__btn{
+  position: relative;
+  width: 210px;
+  height: 143.84px;
+  padding: 70px 40px 40px 40px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 30px;
+  
+  background-color: teal;
+  color: white;
+  font-family: Airbnb Cereal App;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: center;
+  border: none;
+  
+}
+.Location__btn:hover{
+  background-color: darkblue;
+}
+.Location__btn::before{
+  content: " ";
+  width: 21px;
+  height: 24px;
+  top: 40px;
+  left: 95px;
+  right: 20px;
+  position: absolute;
+  background-image: url("../images/Vector.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+
+
+
+
+
+.find{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
+.find__content{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto; 
+  text-align: center;
+}
+.find__span{
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #00B3A0;
+  margin-bottom: 11px;
+}
+.find__title{
+  font-family: Eksell Display;
+  font-size: 42px;
+  font-weight: bold;
+  line-height: 52px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #002248;
+  margin-bottom: 20px;
+}
+.find__text{
+  width: 568px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #697687;
+}
+
+
+
+
+.travel{
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  margin-bottom: 120px; 
+}
+.travel__list{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+.travel__item{
+  position: relative;
+  width: 370px;
+  height: 395px;
+  text-align: center;
+  border-radius: 10px;
+  border: 2px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.travel_text{
+  width: 254px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: center;
+  opacity: 0.7;
+}
+.travel__link{
+  height: 395px;
+  padding-top: 200px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #002248;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.travel__item:first-child:before{
+  content: " ";
+  width: 105px;
+  height: 96px;
+  top: 74px;
+  left: 36%;
+  position: absolute;
+  background-image: url("../images/tell.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+.travel__item:nth-child(2):before{
+  content: " ";
+  width: 105px;
+  height: 96px;
+  top: 74px;
+  left: 36%;
+  position: absolute;
+  background-image: url("../images/calendar.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+.travel__item:nth-child(3):before{
+  content: " ";
+  width: 105px;
+  height: 96px;
+  top: 74px;
+  left: 36%;
+  position: absolute;
+  background-image: url("../images/star.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+
+
+
+
+
+
+
+.suggested{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.Suggested__content{
+  display: flex;
+  flex-direction: column;
+}
+.Suggested__content2{
+  display: flex;
+  justify-content: space-between;
+}
+.Suggested__content3{
+  display: flex;
+  gap: 10px;
+}
+.Suggested__span{
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #00B3A0;
+  margin-bottom: 11px;
+}
+.Suggested__title{
+  font-size: 42px;
+  font-weight: 500;
+  line-height: 52px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #002248;
+  margin-bottom: 20px;
+}
+.Suggested__text{
+  width: 538px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  opacity: 0.7;
+  margin-bottom: 71px;
+}
+.Suggested__Images{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 120px;
+}
+
+
+
+.discover-section{
+  background-image: url("../images/Discover.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
